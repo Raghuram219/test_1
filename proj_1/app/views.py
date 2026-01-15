@@ -16,7 +16,7 @@ class TestViewset(ModelViewSet):
     def list(self,request):
         print("==1==")
         qs= self.get_queryset()
-        print("==2==")
+        print("==2==new update")
         serializer= self.get_serializer(qs,many=True)
         if serializer.is_valid():
             data = serializer.data
